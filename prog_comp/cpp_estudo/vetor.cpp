@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
 
-
+    //Motivação: Facilitar a manipulação dinâmica de memória em vetores
     vector<int>vt = {1,2,3,4,5,6,7,8,9,10};
 
     
