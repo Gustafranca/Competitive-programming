@@ -10,24 +10,19 @@ int main(){
 //arquivo dedicado a resuloção de problemas, para armazenar os 
 //problemas deve criar um arquivo com nome intuitivo ao respectivo exercicio 
     
-    vector<int>vt(1000);
-
-    int j = 0,num;
-    cin >> num;
 
 
-    for(int i =0; i < vt.size(); i++){
-
-        vt[i] = j;
-        j++;
-        if(j % num == 0){
-            j=0;
+    vector<float>A(5); 
+    
+    for(int i = 0; i < A.size();i++){
+        cin >> A[i];
+        if(A[i]  <= 10){
+        cout << "A[" << i << "]" << " = " <<fixed << setprecision(1) << A[i] << endl;
         }
-        cout << "N[" << i << "]" << " = " << vt[i] << endl;
     }
 
 
-    return 0;
+
 
 
 

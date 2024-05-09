@@ -10,24 +10,25 @@ int main(){
 //arquivo dedicado a resuloção de problemas, para armazenar os 
 //problemas deve criar um arquivo com nome intuitivo ao respectivo exercicio 
     
-    vector<int>vt(1000);
-
-    int j = 0,num;
-    cin >> num;
 
 
-    for(int i =0; i < vt.size(); i++){
+    int senha=0;
 
-        vt[i] = j;
-        j++;
-        if(j % num == 0){
-            j=0;
+
+    while(1){
+        cin >> senha;
+        if(senha == 2002){
+            cout << "Acesso Permitido" << endl;
+            break;
+        }else{
+            cout << "Senha Invalida" << endl;
         }
-        cout << "N[" << i << "]" << " = " << vt[i] << endl;
     }
 
 
-    return 0;
+
+
+
 
 
 
