@@ -1,24 +1,31 @@
-#include <iostream>
-#include <iomanip>
-#include <cmath>
-#include <vector>
-#include <array>
-#include <algorithm>
-#include <sstream>
+
+#include <bits/stdc++.h>
+
 using namespace std;
 
-int main(){
-
-//arquivo dedicado a resuloção de problemas, para armazenar os 
-//problemas deve criar um arquivo com nome intuitivo ao respectivo exercicio 
-
-    int dia, mes, dia2, mes2;
-
-    cin >> dia >> mes;
-    cin >> dia2 >> mes2;
+typedef long long ll;
+typedef long double ld;
 
 
+int main() {
+
+	int n; cin >> n;
+	int div = 2;
+	int eprimo = 1;
+
+	while(div <= sqrt(n) && eprimo){
+		if(n % div == 0){
+			eprimo = 0;
+			break;
+		}
+		div++;
+	}
 
 
-    return 0;
+	if(eprimo){
+		cout << n <<"sim" << endl;
+	}else{
+		cout << n <<"nao" << endl;
+	}
+
 }
