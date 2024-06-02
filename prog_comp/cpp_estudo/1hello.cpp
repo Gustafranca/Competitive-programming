@@ -3,32 +3,19 @@
 #include <cmath>
 #include <vector>
 #include <array>
+#include <algorithm>
+#include <sstream>
 using namespace std;
 
 int main(){
 
 //arquivo dedicado a resuloção de problemas, para armazenar os 
 //problemas deve criar um arquivo com nome intuitivo ao respectivo exercicio 
-    
-    vector<int>vt(1000);
 
-    int j = 0,num;
-    cin >> num;
+    int dia, mes, dia2, mes2;
 
-
-    for(int i =0; i < vt.size(); i++){
-
-        vt[i] = j;
-        j++;
-        if(j % num == 0){
-            j=0;
-        }
-        cout << "N[" << i << "]" << " = " << vt[i] << endl;
-    }
-
-
-    return 0;
-
+    cin >> dia >> mes;
+    cin >> dia2 >> mes2;
 
 
 
